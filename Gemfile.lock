@@ -96,6 +96,7 @@ GEM
       omniauth (~> 1.2)
     omniauth-shopify-oauth2 (1.1.14)
       omniauth-oauth2 (~> 1.2)
+    pg (0.18.4-x64-mingw32)
     pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -182,6 +183,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
+  pg
   rails (= 4.2.7)
   sdoc (~> 0.4.0)
   shopify_app
