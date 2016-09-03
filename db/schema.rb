@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727220524) do
+ActiveRecord::Schema.define(version: 20160903002039) do
+
+  create_table "data_store", force: :cascade do |t|
+    t.string   "first_name", limit: 25
+    t.string   "last_name",  limit: 50
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "data_store2", force: :cascade do |t|
+    t.string   "first_name", limit: 25
+    t.string   "last_name",  limit: 50
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forms", force: :cascade do |t|
+    t.string   "first_name", limit: 25
+    t.string   "last_name",  limit: 50
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string   "shopify_domain", limit: 255, null: false
