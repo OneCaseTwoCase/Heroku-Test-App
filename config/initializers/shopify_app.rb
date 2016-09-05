@@ -5,8 +5,8 @@ ShopifyApp.configure do |config|
   config.scope = "read_orders, read_products, write_products"
   config.embedded_app = true
 
-  config.scripttags = [
-    {event:'onload', src: 'https://s3-us-west-1.amazonaws.com/hi-js/Hi2.js'}
-  ]
+  # config.scripttags = [
+  #   {event:'onload', src: 'https://s3-us-west-1.amazonaws.com/hi-js/Hi2.js'}
+  # ]
   
 end
