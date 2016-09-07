@@ -57,6 +57,6 @@ test:
 #
 production:
   <<: *default
-  database: hello_world_production
-  username: hello_world
-  password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
+  database: hello_world_development
+  username: thecasery
+  password: gocaseyourself
