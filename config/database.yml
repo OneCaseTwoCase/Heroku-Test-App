@@ -56,8 +56,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 
-   production:
-     url: <%= ENV['DATABASE_URL'] %>
+DATABASE_URL="testapp.c9dsoejeuxy7.us-west-1.rds.amazonaws.com"
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>
 
 # production:
 #   <<: *default
