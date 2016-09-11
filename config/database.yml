@@ -55,8 +55,16 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: hello_world_development
-  username: thecasery
-  password: gocaseyourself
+
+   production:
+     url: <%= ENV['DATABASE_URL'] %>
+
+# production:
+#   <<: *default
+#   database: hello_world_production
+#   username: hello_world
+#   password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
+
+
+# Heroku Default DATABASE_URL
+# postgres://yaxnzzmtraovth:sF9N8SjLcUSm5s-MS8_rK91ieN@ec2-50-19-222-159.compute-1.amazonaws.com:5432/davmq1fpg8i3m0
