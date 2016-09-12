@@ -13,6 +13,15 @@ class HomeController < ShopifyApp::AuthenticatedController
       redirect_to(:action => 'index') 
     end  
     #redirect_to(:action => 'index') 
+  end
+
+  def proxy
+    redirect_to('https://thecasery.com')
+    # @form = Form.new(form_params)
+    # if @form.save
+      #flash[:notice] = "Form saved successfully."
+      #redirect_to(:action => 'index') 
+    end  
   end 
 
 end
