@@ -55,17 +55,12 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-
-#DATABASE_URL="testapp.c9dsoejeuxy7.us-west-1.rds.amazonaws.com"
-
 production:
-  url: <%= ENV['DATABASE_URL'] %>
-
-# production:
-#   <<: *default
-#   database: hello_world_production
-#   username: hello_world
-#   password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
+  <<: *default
+  database: Heroku_Test_App_DB
+  url: postgres://root:rubyroot@test-id.c9dsoejeuxy7.us-west-1.rds.amazonaws.com:5432/Heroku_Test_App_DB         
+  username: root
+  password: rubyroot
 
 
 # Heroku Default DATABASE_URL
