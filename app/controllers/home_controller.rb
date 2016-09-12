@@ -21,7 +21,7 @@ class HomeController < ShopifyApp::AuthenticatedController
     # if @form.save
       #flash[:notice] = "Form saved successfully."
       #redirect_to(:action => 'index') 
-    end  
+    #end  
   end 
 
 end
