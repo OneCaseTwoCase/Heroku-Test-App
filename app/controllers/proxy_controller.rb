@@ -1,6 +1,6 @@
 class ProxyController < ApplicationController
 
-protect_from_forgery false, only: [ :create ]
+protect_from_forgery false, only: [:create]
 
 def index
  
