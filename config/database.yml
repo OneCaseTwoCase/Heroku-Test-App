@@ -9,21 +9,21 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
-  username: thecasery
-  password: gocaseyourself
-  host:  testapp.c9dsoejeuxy7.us-west-1.rds.amazonaws.com
-
 # default: &default
 #   adapter: mysql2
 #   encoding: utf8
 #   pool: 5
-#   username: root
-#   password: rubyroot
-#   host: localhost
+#   username: thecasery
+#   password: gocaseyourself
+#   host:  testapp.c9dsoejeuxy7.us-west-1.rds.amazonaws.com
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: rubyroot
+  host: localhost
 
 development:
   <<: *default

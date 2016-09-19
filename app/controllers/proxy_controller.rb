@@ -1,7 +1,7 @@
-#class ProxyController < ApplicationController
-class ProxyController < ActionController::Base
+class ProxyController < ApplicationController
+#class ProxyController < ActionController::Base
 
-protect_from_forgery false, only: [:create]
+#protect_from_forgery false, only: [:create]
 
 def index
  
