@@ -1,4 +1,5 @@
-class ProxyController < ApplicationController::Base
+#class ProxyController < ApplicationController
+class ProxyController < ActionController::Base
 
 protect_from_forgery false, only: [:create]
 
